@@ -87,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
   },
   info: {
     padding: theme.spacing(2),
+    width: 300,
   },
 }));
 
@@ -341,7 +342,7 @@ const MarketItem: FC<Props> = ({ name, url, price, bid, address, tokenId }) => {
           {!isBuyed && (
             <Grid container direction="row" justify="space-between">
               <Typography className={classes.mb}>Собрано:</Typography>
-              <Typography className={classes.price}>{locked}</Typography>
+              <Typography className={classes.price}>{locked} ETH</Typography>
             </Grid>
           )}
           {toNumber(locked) > 0 && allocation && allocation[0] !== "0" && (
@@ -441,7 +442,7 @@ const MarketItem: FC<Props> = ({ name, url, price, bid, address, tokenId }) => {
             <Grid container direction="row" justify="space-between">
               <Typography className={classes.mb}>Вы внесли:</Typography>
               <Typography className={classes.price}>
-                {allocation[0] / Math.pow(10, 18)}
+                {allocation[0] / Math.pow(10, 18)} ETH
               </Typography>
             </Grid>
             <Grid container direction="row" justify="space-between">
