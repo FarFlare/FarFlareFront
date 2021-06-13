@@ -2,7 +2,7 @@
   "name": "far-flare-front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nameaccount.github.io/namerepository",
+  "homepage": "https://FarFlare.github.io/FarFlareFront",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
