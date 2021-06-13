@@ -243,7 +243,7 @@ const MarketItem: FC<Props> = ({ name, url, price, bid, address, tokenId }) => {
 
   const onSliderChange = (event: object, value: number | number[]): void => {
     if (typeof value === "number") {
-      setInputValue(`${decimalAdjust('round', (changedPrice / 100) * value, -5)}`);
+      setInputValue(`${decimalAdjust('round', (changedPrice / 100) * value, -18)}`);
       setSliderValue(value);
     }
   };
