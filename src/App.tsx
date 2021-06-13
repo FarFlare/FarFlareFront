@@ -94,7 +94,7 @@ const App = () => {
           {routes.map((item) => (
             <Route path={item.path} component={item.component} />
           ))}
-          <Redirect to="/market" />
+          <Redirect to="/" />
         </Switch>
         <Modal
           open={modalVisible}
