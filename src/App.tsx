@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) =>
   }),
 );
 
-const TOKEN_ADDRESS = '0x603750F8063AE41Fb2a0b3E10742286027041D62';
+const TOKEN_ADDRESS = '0x536d17Ef0600696540A560ae15af180151a09FdC';
 
 const App = () => {
   const classes = useStyles();
